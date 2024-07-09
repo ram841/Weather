@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeatherForecasting</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <script src="Dashboard.js"></script>
+
+    </script>
 </head>
 <body>
-    
+    <Div id="container">
+        <div id="search">
+            <input type="text" placeholder="Enter valid city">
+            <button id="S-button"><i class="gg-search"></i></button>
+        </div>
+        <div id="e-count">
+            <div id="error">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/error-404-page-not-available-9561127-7706458.png" alt="">
+                <h1>Invalid city name</h1>
+            </div>
+        </div>
+        <div id="weather">
+            <img src="" alt="" id="Weather-icon">
+            <h1 id="temp"></h1>
+            <h1 id="city"></h1>
+            <div id="details">
+                <div class="column">
+                    <img src="./image/humidity.png" alt="">
+                    <p id="Humi"></p>
+                    <p>Humidity</p>
+                </div>
+                <div class="column">
+                    <img src="./image/wind.png" alt="">
+                    <div>
+                        <p id="wind"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Div>
 </body>
 </html>
